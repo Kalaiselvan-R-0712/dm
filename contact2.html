@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>About Us — Stackly Digital Marketing Agency</title>
+<title>Contact Us — Stackly Digital Marketing Agency</title>
 <meta name="description" content="Discover Stackly's story, values and team. Luxury event management crafted with passion and precision." />
 <!-- Tailwind CDN -->
 <script src="https://cdn.tailwindcss.com"></script>
@@ -455,6 +455,29 @@ footer a:hover {
   }
 }
 
+.contact-hero { margin-top:100px; text-align:center; padding:60px 20px; }
+.contact-hero h1 { font-size:42px; font-weight:700; margin-bottom:10px; }
+.contact-hero p { font-size:18px; opacity:0.8; }
+
+.contact-section { max-width:1250px; margin:60px auto; padding:0 20px; display:grid; grid-template-columns:1fr 1fr; gap:60px; align-items:start; }
+.contact-form { background:#fff; padding:40px; border-radius:16px; box-shadow:0 6px 18px rgba(0,0,0,0.06); }
+.contact-form h3 { font-size:24px; font-weight:700; margin-bottom:25px; text-align:center; }
+.contact-form label { display:block; font-weight:500; margin-bottom:6px; margin-top:15px; }
+.contact-form input, .contact-form textarea { width:100%; padding:12px 15px; border:1px solid #ccc; border-radius:10px; margin-bottom:10px; outline:none; transition:0.3s; }
+.contact-form input:focus, .contact-form textarea:focus { border-color:var(--gold-1); }
+.contact-form textarea { resize:none; min-height:140px; }
+
+.submit-btn { display:inline-block; background:linear-gradient(90deg,var(--gold-1),var(--gold-2)); color:#18181b; padding:12px 22px; border-radius:999px; font-weight:700; text-align:center; transition:0.2s; cursor:pointer; }
+.submit-btn:hover { transform:translateY(-2px); box-shadow:0 6px 20px rgba(212,175,55,0.2); }
+
+/* Contact info */
+.contact-info { display:flex; flex-direction:column; gap:25px; }
+.contact-info div { background:var(--ivory); padding:25px; border-radius:16px; box-shadow:0 6px 16px rgba(0,0,0,0.06); }
+.contact-info div h4 { font-size:18px; font-weight:600; margin-bottom:8px; }
+.contact-info div p { font-size:16px; opacity:0.85; line-height:1.6; }
+
+/* Responsive */
+@media (max-width:1024px) { .contact-section { grid-template-columns:1fr; text-align:center; } .contact-info { flex-direction:row; flex-wrap:wrap; justify-content:center; gap:20px; } }
 </style>
 </head>
 
@@ -462,16 +485,16 @@ footer a:hover {
 <!-- HEADER -->
 <header class="site-header fixed top-0 left-0 w-full z-50">
   <div class="max-w-7xl mx-auto flex items-center justify-between px-6 py-3">
-    <a href="index.html" class="logo-box">
+    <a href="homepage2.html" class="logo-box">
       <img src="assets/images/logo/stackly_logo.webp" alt="Stackly logo" class="logo-img-rect" />
     </a>
     <!-- NAV LINKS -->
     <nav class="items-center gap-6 hidden lg:flex nav-links">
-      <a href="index.html" class="text-gray-700 hover:text-[var(--accent)]" aria-current="false">Home</a>
-      <a href="about.html" class="text-gray-700 hover:text-[var(--accent)]" aria-current="page">About</a>
-      <a href="services.html" class="text-gray-700 hover:text-[var(--accent)]">Services</a>
-      <a href="packages.html" class="text-gray-700 hover:text-[var(--accent)]">Packages</a>
-      <a href="contact.html" class="text-gray-700 hover:text-[var(--accent)]">Contact</a>
+      <a href="homepage2.html" class="text-gray-700 hover:text-[var(--accent)]" aria-current="false">Home</a>
+      <a href="about2.html" class="text-gray-700 hover:text-[var(--accent)]">About</a>
+      <a href="services2.html" class="text-gray-700 hover:text-[var(--accent)]">Services</a>
+      <a href="packages2.html" class="text-gray-700 hover:text-[var(--accent)]">Packages</a>
+      <a href="contact2.html" class="text-gray-700 hover:text-[var(--accent)]" aria-current="page">Contact</a>
       <a href="dashboard.html" class="text-gray-700 hover:text-[var(--accent)]">Dashboard</a>
       <a href="login.html" class="login-btn ml-2 hover:shadow-md">Login</a>
       <a href="register.html" class="register-btn ml-3">Register</a>
@@ -482,148 +505,112 @@ footer a:hover {
     </div>
   </div>
   <div id="mobile-menu" class="hidden lg:hidden flex flex-col items-center space-y-3 text-sm px-6 py-4 text-center">
-    <a href="index.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto" aria-current="false">Home</a>
-    <a href="about.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto" aria-current="page">About</a>
-    <a href="services.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Services</a>
-    <a href="packages.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Packages</a>
-    <a href="contact.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Contact</a>
+    <a href="homepage2.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto" aria-current="false">Home</a>
+    <a href="about2.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">About</a>
+    <a href="services2.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Services</a>
+    <a href="packages2.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Packages</a>
+    <a href="contact2.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto" aria-current="page">Contact</a>
     <a href="dashboard.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Dashboard</a>
     <a href="login.html" class="block w-full max-w-xs mt-2 py-2 border rounded-full text-center login-btn mx-auto">Login</a>
     <a href="register.html" class="block w-full max-w-xs py-2 rounded-full text-center register-btn mx-auto">Register</a>
   </div>
 </header>
 
-<!-- ABOUT HERO -->
-<section class="pt-40 pb-24 bg-gradient-to-b from-[#faf8f4] to-[#f3efe9]">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <span class="text-[var(--accent)] font-semibold tracking-wide">WHO WE ARE</span>
-    <h1 class="mt-3 text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-      Crafting Digital Experiences That <span class="text-[var(--accent)]">Transform</span> Brands
+<!-- HERO -->
+<section class="w-full mt-28 mb-10">
+  <div class="max-w-5xl mx-auto text-center px-5">
+    <h1 class="text-5xl font-bold" style="font-family: 'Playfair Display', serif;">
+      Let’s Connect With Stackly
     </h1>
-    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-      At Stackly, we blend creativity, performance marketing, and technology to help businesses grow faster,
-      smarter, and bigger in today’s digital world.
+    <p class="text-lg mt-3 text-gray-600">
+      Have a project in mind? We would love to collaborate and create something extraordinary.
     </p>
   </div>
 </section>
 
-<!-- ABOUT PREMIUM SECTION -->
-<section class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-center">
-  <div>
-    <img src="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-         class="rounded-2xl shadow-xl">
-  </div>
+<!-- MAP SECTION -->
+<section class="w-full py-14 bg-[#f8f6f2]">
+  <div class="max-w-7xl mx-auto px-6">
 
-  <div>
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">A Digital Agency Built for the Future</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">
-      We are a forward-thinking digital marketing agency that focuses on measurable results, high-end design,
-      brand positioning, and audience-focused strategy. Every project is crafted with precision, data, and
-      creativity — ensuring brands stand out in competitive markets.
-    </p>
+    <h2 class="text-4xl font-bold text-center mb-8" style="font-family:'Playfair Display', serif;">
+      Our Location
+    </h2>
 
-    <p class="text-gray-600 leading-relaxed mb-4">
-      From small businesses to enterprise-level companies, our approach stays the same: understand deeply,
-      execute creatively, and deliver exceptional growth.
-    </p>
-
-    <div class="mt-6 bg-[#fff7e6] p-6 rounded-xl border-l-4 border-[var(--accent)]">
-      <strong class="text-lg">Our Purpose:</strong>
-      <p class="text-gray-700 mt-1">
-        To empower brands with powerful digital strategies that don’t just look good — but perform.
-      </p>
-    </div>
-  </div>
-</section>
-
-<!-- STATS SECTION -->
-<section class="py-16 bg-[#f8f6f2]">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10 text-center">
-    
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="text-4xl font-bold text-[var(--accent)]">250+</h3>
-      <p class="text-gray-600 mt-2">Successful Campaigns</p>
-    </div>
-
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="text-4xl font-bold text-[var(--accent)]">98%</h3>
-      <p class="text-gray-600 mt-2">Client Satisfaction</p>
-    </div>
-
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="text-4xl font-bold text-[var(--accent)]">40+</h3>
-      <p class="text-gray-600 mt-2">Brands Transformed</p>
-    </div>
-
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="text-4xl font-bold text-[var(--accent)]">7+</h3>
-      <p class="text-gray-600 mt-2">Years of Experience</p>
+    <div class="rounded-2xl overflow-hidden shadow-xl">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3890.202888614791!2d80.209291!3d12.7694906!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a525f795f62e454%3A0xffb8c3728a1f0daf!2sChennai%2C%20Tamil%20Nadu!5e0!3m2!1sen!2sin!4v000000"
+        width="100%" height="420" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
     </div>
 
   </div>
 </section>
 
-<!-- OUR VALUES - MORE PREMIUM -->
-<section class="py-20 max-w-7xl mx-auto px-6">
-  <h2 class="text-center text-3xl md:text-4xl font-bold mb-12">Our Core Values</h2>
+<!-- CONTACT + INFO GRID -->
+<section class="max-w-7xl mx-auto px-6 py-10 grid lg:grid-cols-2 gap-10">
 
-  <div class="grid md:grid-cols-4 gap-8">
+  <!-- Form -->
+  <form class="contact-form bg-white p-10 rounded-2xl shadow-xl" onsubmit="handleSubmit(event)">
+    <h3 class="text-3xl font-bold text-center mb-6" style="font-family: 'Playfair Display', serif;">
+      Send Us a Message
+    </h3>
 
-    <div class="p-8 bg-white shadow-xl rounded-xl hover:-translate-y-2 transition">
-      <h3 class="text-xl font-semibold mb-2 text-[var(--accent)]">Innovation</h3>
-      <p class="text-gray-600">Ideas, technology & creativity—always evolving to stay ahead.</p>
-    </div>
+    <label for="name">Full Name</label>
+    <input type="text" id="name" placeholder="Your Name" required>
 
-    <div class="p-8 bg-white shadow-xl rounded-xl hover:-translate-y-2 transition">
-      <h3 class="text-xl font-semibold mb-2 text-[var(--accent)]">Performance</h3>
-      <p class="text-gray-600">Every campaign designed to create meaningful, measurable growth.</p>
-    </div>
+    <label for="email">Email Address</label>
+    <input type="email" id="email" placeholder="Your Email" required>
 
-    <div class="p-8 bg-white shadow-xl rounded-xl hover:-translate-y-2 transition">
-      <h3 class="text-xl font-semibold mb-2 text-[var(--accent)]">Integrity</h3>
-      <p class="text-gray-600">Clear communication, real data, honest insights.</p>
-    </div>
+    <label for="subject">Subject</label>
+    <input type="text" id="subject" placeholder="Subject" required>
 
-    <div class="p-8 bg-white shadow-xl rounded-xl hover:-translate-y-2 transition">
-      <h3 class="text-xl font-semibold mb-2 text-[var(--accent)]">Excellence</h3>
-      <p class="text-gray-600">Premium quality, pixel-perfect work, outstanding service.</p>
-    </div>
+    <label for="message">Message</label>
+    <textarea id="message" placeholder="Type your message…" required></textarea>
 
-  </div>
-</section>
+    <button type="submit" class="submit-btn mt-5">
+      Send Message
+    </button>
+  </form>
 
-<!-- TEAM SECTION -->
-<section class="py-20 bg-[#faf8f4]">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
-    <p class="text-gray-600 max-w-2xl mx-auto mb-12">
-      A passionate group of strategists, designers, analysts, and creators dedicated to elevating your brand.
-    </p>
+  <!-- Contact Cards -->
+  <div class="space-y-6">
 
-    <div class="grid md:grid-cols-3 gap-10">
-
-      <div class="bg-white rounded-xl shadow p-6">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-full h-28 w-28 mx-auto">
-        <h3 class="mt-4 text-xl font-semibold">Arjun Mehta</h3>
-        <p class="text-gray-500 text-sm">Head of Strategy</p>
+    <div class="bg-white rounded-2xl p-8 shadow-lg flex items-start gap-4">
+      <img src="https://img.icons8.com/fluency/48/marker.png" class="w-12 h-12">
+      <div>
+        <h4 class="font-semibold text-xl mb-1">Our Office</h4>
+        <p class="text-gray-600 leading-relaxed">
+          22 Event Street,<br>
+          Chennai, Tamil Nadu,<br>
+          India
+        </p>
       </div>
-
-      <div class="bg-white rounded-xl shadow p-6">
-        <img src="https://randomuser.me/api/portraits/women/33.jpg" class="rounded-full h-28 w-28 mx-auto">
-        <h3 class="mt-4 text-xl font-semibold">Priya Sharma</h3>
-        <p class="text-gray-500 text-sm">Creative Director</p>
-      </div>
-
-      <div class="bg-white rounded-xl shadow p-6">
-        <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-full h-28 w-28 mx-auto">
-        <h3 class="mt-4 text-xl font-semibold">Rohit Nair</h3>
-        <p class="text-gray-500 text-sm">Lead Performance Marketer</p>
-      </div>
-
     </div>
+
+    <div class="bg-white rounded-2xl p-8 shadow-lg flex items-start gap-4">
+      <img src="https://img.icons8.com/fluency/48/phone.png" class="w-12 h-12">
+      <div>
+        <h4 class="font-semibold text-xl mb-1">Call Us</h4>
+        <p class="text-gray-600 text-lg">+91 98765 43210</p>
+      </div>
+    </div>
+
+    <div class="bg-white rounded-2xl p-8 shadow-lg flex items-start gap-4">
+      <img src="https://img.icons8.com/fluency/48/message-group.png" class="w-12 h-12">
+      <div>
+        <h4 class="font-semibold text-xl mb-1">Email Us</h4>
+        <p class="text-gray-600 text-lg">hello@stackly.com</p>
+        <a 
+          href="404.html" 
+          class="inline-block mt-3 submit-btn px-6 py-2"
+        >
+          Email Us
+        </a>
+      </div>
+    </div>
+
   </div>
 </section>
-
 
 <!-- FOOTER -->
 <footer class="bg-[#060507] dark:bg-[#050406] text-gray-300 pt-10 pb-8">
@@ -637,11 +624,11 @@ footer a:hover {
     <div>
       <h4 class="font-semibold text-white mb-2">Quick Links</h4>
       <ul class="space-y-2 text-sm text-gray-300">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="homepage2.html">Home</a></li>
+        <li><a href="about2.html">About</a></li>
+        <li><a href="services2.html">Services</a></li>
+        <li><a href="packages2.html">Packages</a></li>
+        <li><a href="contact2.html">Contact</a></li>
       </ul>
     </div>
     <div>
@@ -785,6 +772,17 @@ mobileHomeDropdownBtn.addEventListener('click', () => {
   mobileHomeDropdownMenu.classList.toggle('hidden');
   mobileHomeDropdownBtn.querySelector('svg').classList.toggle('rotate-180');
 });
+</script>
+
+<script>
+function toggleMenu(){
+  document.querySelector(".nav-center").classList.toggle("active");
+  document.querySelector(".nav-auth").classList.toggle("active");
+}
+function handleSubmit(event){
+  event.preventDefault();
+  window.location.href = "404.html"; // fake submission redirect
+}
 </script>
 </body>
 </html>

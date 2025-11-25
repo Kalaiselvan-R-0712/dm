@@ -1,25 +1,23 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
-<meta charset="utf-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>About Us — Stackly Digital Marketing Agency</title>
-<meta name="description" content="Discover Stackly's story, values and team. Luxury event management crafted with passion and precision." />
-<!-- Tailwind CDN -->
-<script src="https://cdn.tailwindcss.com"></script>
-<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700;800&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login | Stackly</title>
 
-<style>
-:root {
-  --gold-1: #d4af37;
-  --gold-2: #b88b25;
-  --accent: #d4a657;
-  --ivory: #f8f6f2;
-  --ivory-2: #f3efe9;
-  --text-dark: #111827;
-  --muted: #6b7280;
-}
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
 
+  <!-- TailwindCSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <style>
+    body {
+      font-family: 'Inter', sans-serif;
+    }
+    .brand-font {
+      font-family: 'Playfair Display', serif;
+    }
 /* Logo Box */
 .logo-box {
   display: flex;
@@ -325,136 +323,6 @@ footer a:hover {
   }
 }
 
-
-/* ---------------- OUR VALUES ---------------- */
-.values-section{
-  max-width:1250px;
-  margin:80px auto;
-  padding:0 20px;
-}
-
-.values-section h2{
-  text-align:center;
-  font-size:32px;
-  margin-bottom:40px;
-}
-
-.values-grid{
-  display:grid;
-  grid-template-columns:repeat(auto-fit, minmax(250px,1fr));
-  gap:25px;
-}
-
-.value-card{
-  background:#fff;
-  padding:25px;
-  border-radius:12px;
-  box-shadow:0 6px 16px rgba(0,0,0,0.06);
-  transition:0.3s;
-}
-
-.value-card:hover{
-  transform:translateY(-6px);
-  box-shadow:0 10px 25px rgba(0,0,0,0.08);
-}
-
-.value-card h3{
-  margin-bottom:10px;
-  font-size:20px;
-  font-weight:600;
-}
-.value-card p{ opacity:0.8; }
-
-
-/* ---------------- HERO ---------------- */
-.about-hero{
-  margin-top:100px;
-  text-align:center;
-  padding:60px 20px;
-}
-
-.about-hero h1{
-  font-size:42px;
-  font-weight:700;
-  margin-bottom:10px;
-}
-
-.about-hero p{
-  font-size:18px;
-  opacity:0.8;
-}
-
-/* ---------------- ABOUT CONTENT ---------------- */
-.about-section{
-  max-width:1250px;
-  margin:60px auto;
-  padding:0 20px;
-  display:grid;
-  grid-template-columns:1fr 1fr;
-  gap:40px;
-  align-items:center;
-}
-
-.about-section img{
-  width:100%;
-  border-radius:16px;
-  box-shadow:0 8px 25px rgba(0,0,0,0.08);
-}
-
-.about-text h2{
-  font-size:32px;
-  font-weight:700;
-  margin-bottom:15px;
-}
-
-.about-text p{
-  font-size:16px;
-  opacity:0.85;
-  line-height:1.6;
-  margin-bottom:20px;
-}
-
-
-
-
-.highlight-box{
-  background:#f0f5ff;
-  padding:25px;
-  border-radius:12px;
-  border-left:5px solid #007bff;
-  margin-top:20px;
-}
-
-/* ---------------- RESPONSIVE ---------------- */
-@media (max-width:900px){
-
-  .nav-center, .nav-auth{
-    position:fixed;
-    top:0;
-    right:-100%;
-    width:250px;
-    height:100vh;
-    background:#ffffff;
-    flex-direction:column;
-    padding-top:120px;
-    gap:22px;
-    box-shadow:-3px 0 20px rgba(0,0,0,0.1);
-    transition:0.3s;
-  }
-
-  .nav-center.active,
-  .nav-auth.active{
-    right:0;
-  }
-
-  .menu-btn{ display:block; }
-
-  .about-section{
-    grid-template-columns:1fr;
-    text-align:center;
-  }
-}
-
 </style>
 </head>
 
@@ -465,167 +333,137 @@ footer a:hover {
     <a href="index.html" class="logo-box">
       <img src="assets/images/logo/stackly_logo.webp" alt="Stackly logo" class="logo-img-rect" />
     </a>
-    <!-- NAV LINKS -->
-    <nav class="items-center gap-6 hidden lg:flex nav-links">
-      <a href="index.html" class="text-gray-700 hover:text-[var(--accent)]" aria-current="false">Home</a>
-      <a href="about.html" class="text-gray-700 hover:text-[var(--accent)]" aria-current="page">About</a>
-      <a href="services.html" class="text-gray-700 hover:text-[var(--accent)]">Services</a>
-      <a href="packages.html" class="text-gray-700 hover:text-[var(--accent)]">Packages</a>
-      <a href="contact.html" class="text-gray-700 hover:text-[var(--accent)]">Contact</a>
-      <a href="dashboard.html" class="text-gray-700 hover:text-[var(--accent)]">Dashboard</a>
-      <a href="login.html" class="login-btn ml-2 hover:shadow-md">Login</a>
-      <a href="register.html" class="register-btn ml-3">Register</a>
-    </nav>
-    <div class="flex items-center gap-3">
-      <!-- Hamburger button -->
-      <button id="mobile-toggle" aria-expanded="false" aria-controls="mobile-menu" class="lg:hidden p-2 text-2xl" aria-label="Open menu">☰</button>
-    </div>
-  </div>
-  <div id="mobile-menu" class="hidden lg:hidden flex flex-col items-center space-y-3 text-sm px-6 py-4 text-center">
-    <a href="index.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto" aria-current="false">Home</a>
-    <a href="about.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto" aria-current="page">About</a>
-    <a href="services.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Services</a>
-    <a href="packages.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Packages</a>
-    <a href="contact.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Contact</a>
-    <a href="dashboard.html" class="block w-full max-w-xs px-4 py-2 rounded-md hover:bg-yellow-500 hover:text-black mx-auto">Dashboard</a>
-    <a href="login.html" class="block w-full max-w-xs mt-2 py-2 border rounded-full text-center login-btn mx-auto">Login</a>
-    <a href="register.html" class="block w-full max-w-xs py-2 rounded-full text-center register-btn mx-auto">Register</a>
-  </div>
 </header>
 
-<!-- ABOUT HERO -->
-<section class="pt-40 pb-24 bg-gradient-to-b from-[#faf8f4] to-[#f3efe9]">
-  <div class="max-w-6xl mx-auto px-6 text-center">
-    <span class="text-[var(--accent)] font-semibold tracking-wide">WHO WE ARE</span>
-    <h1 class="mt-3 text-4xl md:text-5xl font-extrabold text-gray-900 leading-tight">
-      Crafting Digital Experiences That <span class="text-[var(--accent)]">Transform</span> Brands
-    </h1>
-    <p class="mt-4 text-lg text-gray-600 max-w-2xl mx-auto">
-      At Stackly, we blend creativity, performance marketing, and technology to help businesses grow faster,
-      smarter, and bigger in today’s digital world.
-    </p>
-  </div>
-</section>
+  <!-- Hamburger Script -->
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const mobileMenu = document.getElementById('mobileMenu');
 
-<!-- ABOUT PREMIUM SECTION -->
-<section class="max-w-7xl mx-auto px-6 py-20 grid lg:grid-cols-2 gap-14 items-center">
-  <div>
-    <img src="https://images.unsplash.com/photo-1576267423445-b2e0074d68a4?q=80&w=870&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
-         class="rounded-2xl shadow-xl">
-  </div>
+    hamburger.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
 
-  <div>
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">A Digital Agency Built for the Future</h2>
-    <p class="text-gray-600 leading-relaxed mb-4">
-      We are a forward-thinking digital marketing agency that focuses on measurable results, high-end design,
-      brand positioning, and audience-focused strategy. Every project is crafted with precision, data, and
-      creativity — ensuring brands stand out in competitive markets.
-    </p>
+  <!-- ================= LOGIN FORM ================= -->
+  <section class="min-h-screen flex items-center justify-center px-4 pt-28 pb-10">
 
-    <p class="text-gray-600 leading-relaxed mb-4">
-      From small businesses to enterprise-level companies, our approach stays the same: understand deeply,
-      execute creatively, and deliver exceptional growth.
-    </p>
+    <div class="w-full max-w-md bg-white rounded-2xl p-8 shadow-xl border border-gray-200">
+      <h2 class="text-3xl brand-font text-center text-yellow-600 mb-8">
+        Login to Stackly
+      </h2>
 
-    <div class="mt-6 bg-[#fff7e6] p-6 rounded-xl border-l-4 border-[var(--accent)]">
-      <strong class="text-lg">Our Purpose:</strong>
-      <p class="text-gray-700 mt-1">
-        To empower brands with powerful digital strategies that don’t just look good — but perform.
-      </p>
-    </div>
-  </div>
-</section>
+      <form id="loginForm" class="space-y-6">
 
-<!-- STATS SECTION -->
-<section class="py-16 bg-[#f8f6f2]">
-  <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-10 text-center">
-    
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="text-4xl font-bold text-[var(--accent)]">250+</h3>
-      <p class="text-gray-600 mt-2">Successful Campaigns</p>
-    </div>
+        <!-- Email -->
+        <div>
+          <label class="block text-sm font-medium mb-2">Email</label>
+          <input id="email" type="email"
+            placeholder="example@domain.com"
+            class="w-full px-4 py-3 bg-white border border-gray-400 rounded-lg focus:border-yellow-600 outline-none transition" />
+          <p id="emailError" class="text-red-600 text-sm mt-1 hidden">Enter a valid email (example@domain.com)</p>
+        </div>
 
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="text-4xl font-bold text-[var(--accent)]">98%</h3>
-      <p class="text-gray-600 mt-2">Client Satisfaction</p>
-    </div>
+        <!-- Password -->
+        <div>
+          <label class="block text-sm font-medium mb-2">Password</label>
 
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="text-4xl font-bold text-[var(--accent)]">40+</h3>
-      <p class="text-gray-600 mt-2">Brands Transformed</p>
-    </div>
+          <div class="relative">
+  <input id="password" type="password"
+    placeholder="At least 8 chars (Upper, lower, number, special)"
+    class="w-full px-4 pr-12 py-3 bg-white border border-gray-400 rounded-lg 
+           focus:border-yellow-600 outline-none transition" />
 
-    <div class="p-6 bg-white rounded-2xl shadow">
-      <h3 class="text-4xl font-bold text-[var(--accent)]">7+</h3>
-      <p class="text-gray-600 mt-2">Years of Experience</p>
-    </div>
+  <!-- Eye Icon -->
+  <span id="togglePassword"
+    class="absolute right-4 top-3 text-xl cursor-pointer select-none">👁️</span>
+</div>
 
-  </div>
-</section>
 
-<!-- OUR VALUES - MORE PREMIUM -->
-<section class="py-20 max-w-7xl mx-auto px-6">
-  <h2 class="text-center text-3xl md:text-4xl font-bold mb-12">Our Core Values</h2>
+          <p id="passError" class="text-red-600 text-sm mt-1 hidden">
+            Must be 8+ chars, include upper, lower, number & special character
+          </p>
+        </div>
 
-  <div class="grid md:grid-cols-4 gap-8">
+        <!-- Forgot Password -->
+        <div class="text-right">
+          <a href="404.html" class="text-yellow-600 hover:underline text-sm">Forgot Password?</a>
+        </div>
 
-    <div class="p-8 bg-white shadow-xl rounded-xl hover:-translate-y-2 transition">
-      <h3 class="text-xl font-semibold mb-2 text-[var(--accent)]">Innovation</h3>
-      <p class="text-gray-600">Ideas, technology & creativity—always evolving to stay ahead.</p>
+        <!-- Login Button -->
+        <button type="submit"
+          class="w-full py-3 bg-yellow-500 text-black font-semibold text-lg rounded-lg hover:bg-yellow-600 transition">
+          Login
+        </button>
+
+        <!-- Register -->
+        <p class="text-center mt-4 text-gray-700">
+          Don't have an account?
+          <a href="register.html" class="text-yellow-600 font-semibold hover:underline">
+            Register
+          </a>
+        </p>
+
+        <!-- Continue as guest -->
+        <p class="text-center mt-3">
+          <a href="index.html" class="text-yellow-600 font-semibold hover:underline">
+            Continue as Guest
+          </a>
+        </p>
+
+      </form>
     </div>
 
-    <div class="p-8 bg-white shadow-xl rounded-xl hover:-translate-y-2 transition">
-      <h3 class="text-xl font-semibold mb-2 text-[var(--accent)]">Performance</h3>
-      <p class="text-gray-600">Every campaign designed to create meaningful, measurable growth.</p>
-    </div>
+  </section>
 
-    <div class="p-8 bg-white shadow-xl rounded-xl hover:-translate-y-2 transition">
-      <h3 class="text-xl font-semibold mb-2 text-[var(--accent)]">Integrity</h3>
-      <p class="text-gray-600">Clear communication, real data, honest insights.</p>
-    </div>
+  <!-- ================= VALIDATION SCRIPT ================= -->
+  <script>
+    const form = document.getElementById("loginForm");
+    const emailField = document.getElementById("email");
+    const passField = document.getElementById("password");
+    const emailError = document.getElementById("emailError");
+    const passError = document.getElementById("passError");
 
-    <div class="p-8 bg-white shadow-xl rounded-xl hover:-translate-y-2 transition">
-      <h3 class="text-xl font-semibold mb-2 text-[var(--accent)]">Excellence</h3>
-      <p class="text-gray-600">Premium quality, pixel-perfect work, outstanding service.</p>
-    </div>
+    const togglePassword = document.getElementById("togglePassword");
 
-  </div>
-</section>
+    // Show/hide password
+    togglePassword.addEventListener("click", () => {
+      passField.type = passField.type === "password" ? "text" : "password";
+    });
 
-<!-- TEAM SECTION -->
-<section class="py-20 bg-[#faf8f4]">
-  <div class="max-w-7xl mx-auto px-6 text-center">
-    <h2 class="text-3xl md:text-4xl font-bold mb-4">Meet Our Team</h2>
-    <p class="text-gray-600 max-w-2xl mx-auto mb-12">
-      A passionate group of strategists, designers, analysts, and creators dedicated to elevating your brand.
-    </p>
+    form.addEventListener("submit", function (e) {
+      e.preventDefault();
 
-    <div class="grid md:grid-cols-3 gap-10">
+      let valid = true;
 
-      <div class="bg-white rounded-xl shadow p-6">
-        <img src="https://randomuser.me/api/portraits/men/32.jpg" class="rounded-full h-28 w-28 mx-auto">
-        <h3 class="mt-4 text-xl font-semibold">Arjun Mehta</h3>
-        <p class="text-gray-500 text-sm">Head of Strategy</p>
-      </div>
+      // Email regex
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      if (!emailPattern.test(emailField.value.trim())) {
+        emailError.classList.remove("hidden");
+        valid = false;
+      } else {
+        emailError.classList.add("hidden");
+      }
 
-      <div class="bg-white rounded-xl shadow p-6">
-        <img src="https://randomuser.me/api/portraits/women/33.jpg" class="rounded-full h-28 w-28 mx-auto">
-        <h3 class="mt-4 text-xl font-semibold">Priya Sharma</h3>
-        <p class="text-gray-500 text-sm">Creative Director</p>
-      </div>
+      // Password regex (8 chars + upper + lower + number + special)
+      const passPattern =
+        /^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)(?=.*[@$!%*?&#])[A-Za-z\d@$!%*?&#]{8,}$/;
 
-      <div class="bg-white rounded-xl shadow p-6">
-        <img src="https://randomuser.me/api/portraits/men/45.jpg" class="rounded-full h-28 w-28 mx-auto">
-        <h3 class="mt-4 text-xl font-semibold">Rohit Nair</h3>
-        <p class="text-gray-500 text-sm">Lead Performance Marketer</p>
-      </div>
+      if (!passPattern.test(passField.value.trim())) {
+        passError.classList.remove("hidden");
+        valid = false;
+      } else {
+        passError.classList.add("hidden");
+      }
 
-    </div>
-  </div>
-</section>
+      // If valid → redirect
+      if (valid) {
+        window.location.href = "404.html";
+      }
+    });
+  </script>
 
-
-<!-- FOOTER -->
+  <!-- FOOTER -->
 <footer class="bg-[#060507] dark:bg-[#050406] text-gray-300 pt-10 pb-8">
   <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-4 gap-8">
     <div>
@@ -637,11 +475,8 @@ footer a:hover {
     <div>
       <h4 class="font-semibold text-white mb-2">Quick Links</h4>
       <ul class="space-y-2 text-sm text-gray-300">
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
-        <li><a href="packages.html">Packages</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="register.html">Register</a></li>
       </ul>
     </div>
     <div>
@@ -786,5 +621,7 @@ mobileHomeDropdownBtn.addEventListener('click', () => {
   mobileHomeDropdownBtn.querySelector('svg').classList.toggle('rotate-180');
 });
 </script>
+
+
 </body>
 </html>
